@@ -40,6 +40,7 @@
 */
 body {
   background-color: #282c34;
+  margin: 0;
 }
 
 .App {
@@ -69,16 +70,47 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
-  /* width: 100%; */
-  /* padding-top: 1000px; */
-  /* padding: 0 5px; */
+  min-height: 90vh;
   background-color: rgb(40, 37, 53);
 }
 
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup button {
+  margin-bottom: 10px;
+  min-width: 240px;
+  background: #37486b
+}
+
+.signup button:last-child {
+  background: #1f5acf;
+}
+
+.signup label {
+  color: white;
+  text-align: left;
+  width: 240px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.signup input {
+  background: #2a3752;
+  max-width: 220px;
+  margin-bottom: 20px;
+  height: 36px;
+  font-size: 20px;
+}
+
 main {
-  padding: 10px;
-  height: 80vh;
+  padding: 0 10px;
+  height: 74.5vh;
   margin: 10vh 0 10vh;
   overflow-y: scroll;
   display: flex;
@@ -100,7 +132,7 @@ main::-webkit-scrollbar-thumb {
 form {
   height: 10vh;
   position: fixed;
-  bottom: 0;
+  bottom: 40px;
   background-color: rgb(24, 23, 23);
   width: 100%;
   max-width: 728px;
@@ -126,7 +158,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #1f5acf; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -194,4 +226,8 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
+}
+
+footer a {
+  margin-right: 20px;
 }
