@@ -1,11 +1,17 @@
 import { useState, useRef } from 'react';
 import './App.css';
+
+//firebase
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, addDoc, query, orderBy, limit, serverTimestamp } from 'firebase/firestore';
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
+//firebase hooks
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+
+//images
+import { fireImg, chatImg, userImg, reactImg } from "./images/images";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRWbUDSBrjju6TVUeK3gyu8T0dO0IOeiY",
@@ -29,9 +35,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div>
-          <img src="react.png" alt="react icon" />
-          <img src="fire.png" alt="react icon" />
-          <img src="chat.png" alt="react icon" />
+          <img src={reactImg} alt="react icon" />
+          <img src={fireImg} alt="fire icon" />
+          <img src={chatImg} alt="chat icon" />
         </div>
       {user ? <SignOut /> : ''}
       </header>
@@ -150,7 +156,7 @@ function ChatMessage({message}) {
 
   return (
     <div className={`message ${messageClass}`}>
-      <img src={photoURL? photoURL: "user.png"} alt="profile picture" />
+      <img src={photoURL? photoURL: userImg} alt="profile picture" />
       <p>{text}</p>
     </div>
   )
