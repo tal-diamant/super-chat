@@ -8,6 +8,10 @@ A live chat room
 - Firebase authentication
 - Firebase firestore
 
+## Live app
+
+https://tal-diamant.github.io/super-chat/
+
 ![screenshot](/screen_shots/super-chat-2.jpg)
 ![screenshot](/screen_shots/super-chat-1.jpg)
 
