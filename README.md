@@ -8,7 +8,7 @@ A live chat room
 - Firebase authentication
 - Firebase firestore
 
-![screenshot](/screen_shots/super chat 2)
+![screenshot](./screen_shots/super chat 2)
 ![screenshot](/screen_shots/super chat 1)
 
 *was made following a tutorial by "fireship"
