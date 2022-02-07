@@ -12,7 +12,7 @@ A live chat room
 
 https://tal-diamant.github.io/super-chat/
 
-![screenshot](/screen_shots/super-chat-2.jpg)
+<img src="/tal-diamant/super-chat/raw/main/screen_shots/super-chat-2.jpg" alt="screenshot" style="max-width: 200px;">
 ![screenshot](/screen_shots/super-chat-1.jpg)
 
 *was made following a tutorial by "fireship"
